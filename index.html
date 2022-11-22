@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css">
     <script src="https://kit.fontawesome.com/5a8f3232d1.js" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>SHOES</title>
   </head>
   <body>
     <header>
       <nav class="menu">
         <section class="menu__container">
-          <h1 class="menu__logo">SHOES</h1>
+          <img  class="menu__logo" src="/assets/logos/STYLE SHOES 500x500 px.png" alt="">
           <div class="container_izq">
             <ul class="menu__links">
               <li class="menu__item">
@@ -20,7 +22,7 @@
               </li>
 
               <li class="menu__item menu__item--show">
-                <a href="#" class="menu__link"
+                <a href="#products" class="menu__link"
                   >Catalog </a>
               </li>
 
@@ -32,7 +34,7 @@
           <div class="container_central">
             <ul class="menu__links">
               <li class="menu__item">
-                <a href="#" class="jump">JUMP</a>
+                <a href="#products" class="jump">JUMP</a>
               </li>
           </div>
           <div class="container_derecho">
@@ -42,41 +44,41 @@
               </li>
 
               <li class="menu__item menu__item--show">
-                <a href="#" class="menu__link"
+                <a href="#redes_soc" class="menu__link"
                   >Contact</a>
               </li>
 
-              <li class="menu__item">
-                <a href="#" class="menu__link" id="carrito_icon"><img src="/assets/iconos/carro-de-la-carretilla.png" alt="carrito de compras"></a>
+              <li class="menu__item" >
+                <a href="#" class="menu__link" ><img  class="icono-carrito" src="/assets/iconos/carro-de-la-carretilla.png" alt="carrito de compras"></a>
+                
+              </li>
+              <li class="menu__item" >
+                <a href="/assets/Login/form.html" class="menu__link" ><i class="fa-solid fa-user"></i></a>
                 
               </li>
             </ul>
+           
           </div>
-          <!-- CARRITO -->
-      <div class="cart">
-        <h2>Tus NFTs</h2>
-        <div class="cart-container">
+          <div class="iconomenu-responsive">
+            <li class="menu__item" >
+              <a href="#" class="menu__link" ><img  class="icono-carrito-res" src="/assets/iconos/carro-de-la-carretilla.png" alt="carrito de compras"></a>
+              
+            </li>
+            
+            </div>
+      
 
-        </div>
-        <span class="divider"></span>
-        <div class="cart-total">
-          <p>Total:</p>
-          <span class="total">0.00 eTH</span>
-        </div>
-        <button class="btn-buy">Comprar</button>
-        <button class="btn-delete">Vaciar carrito</button>
-      </div>
-      <div class="overlay"></div>
-    </nav>
-  </header>
           <div class="icono-menu">
             <img src="assets/iconos/menu.png" class="menu__img" id="icono-menu" />
           </div>
           <div class="cont-menu active" id="menu">
              <ul>
-               
               <li class="menu__item menu__item--show">
-                <a href="#" class="menu__link"
+                <a href="/assets/Login/form.html" class="menu__link"
+                  ><i class="fa-solid fa-user"></i></a>
+              </li>
+              <li class="menu__item menu__item--show">
+                <a href="#present" class="menu__link"
                   >About</a>
               </li>
                  
@@ -96,18 +98,42 @@
               </li>
                  
               <li class="menu__item menu__item--show">
-                <a href="#" class="menu__link"
+                <a href="#redes_soc" class="menu__link"
                   >Contact</a>
               </li>
+            
               </ul>
             </div>
         </section>
-      </nav>
+  
+          <!-- CARRITO -->
+          <div class="cart_container_total">
+          <div class="cart">
+            <h2>Tus Zapatillas</h2>
+            <div class="cart-container">
+    
+            </div>
+            <span class="divider"></span>
+            <div class="cart-total">
+              <p>Total:</p>
+              <span class="total">0.00 $</span>
+            </div>
+            <button class="btn-buy">Comprar</button>
+            <button class="btn-delete">Vaciar carrito</button>
+          </div>
+          <div class="overlay"></div>
+        </div>
+        </nav>
     </header>
 
-     <main>
+      <main>
       <div class="container_total">
-        
+        <div class="presentacion" id="present">
+          <hr>
+          <h1>Style Shoes</h1>
+          <p>Es una tienda de Zapatillas Orientadas a todo tipo de personas,nuestra tienda busca cumplir las expectativas de cada cliente . fundada en 2016 por Ariel Garaventa</p>
+        <hr>
+        </div>
         <div class="datoscontainer">
           <h2>179.99 $</h2>
           <h1>Nike Air Max Plus III</h1>
@@ -131,14 +157,15 @@
             <div class="size">
               <p>Tamaños Disponibles </p>
               
+              
             </div>
             <div class="size_widget"> 
-            <p>35 - 36 - 37 - 38 - 39 - 40 - 41 - 42</p>
+            <p> 35 - 36 - 37 - 38 - 39 - 40 - 41 - 42</p>
             </div>
            
              
           
-            <button  class="buttons" >Comprar</button>
+            <a href="#products">   <button  class="buttons" >Comprar</button></a>
           </div>
           <section class="exibicion">
             <div class="image-container">
@@ -162,35 +189,36 @@
                   </a>
               </div>
               <article class="light-box" id="image1">
-                  <a href="#image5" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+                  <a href="#image5" class="next"><i class="fa-solid fa-arrow-left " id="flecha_izquierda"></i></a>
                   <img src="/assets/Nike Air Max Plus III/1.jpg" alt="">
-                  <a href="#image2" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+                  <a href="#image2" class="next"><i class="fa-solid fa-arrow-right" id="flecha_derecha"></i></a>
                   <a href="" class="close"><i class="fa-solid fa-xmark"></i></a>
               </article>
               <article class="light-box" id="image2">
-                  <a href="#image1" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+                  <a href="#image1" class="next"><i class="fa-solid fa-arrow-left" id="flecha_izquierda"></i></a>
                   <img src="/assets/Nike Air Max Plus III/2.jpg" alt="">
-                  <a href="#image3" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+                  <a href="#image3" class="next"><i class="fa-solid fa-arrow-right"   id="flecha_derecha" ></i></a>
                   <a href="" class="close"><i class="fa-solid fa-xmark"></i></a>
               </article>
               <article class="light-box" id="image3">
-                  <a href="#image2" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+                  <a href="#image2" class="next"><i class="fa-solid fa-arrow-left" id="flecha_izquierda"></i></a>
                   <img src="/assets/Nike Air Max Plus III/3.jpg" alt="">
-                  <a href="#image4" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+                  <a href="#image4" class="next"><i class="fa-solid fa-arrow-right" id="flecha_derecha"></i></a>
                   <a href="" class="close"><i class="fa-solid fa-xmark"></i></a>
               </article>
               <article class="light-box" id="image4">
-                  <a href="#image3" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+                  <a href="#image3" class="next"><i class="fa-solid fa-arrow-left" id="flecha_izquierda"></i></a>
                   <img src="/assets/Nike Air Max Plus III/4.jpg" alt="">
-                  <a href="#image5" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+                  <a href="#image5" class="next"><i class="fa-solid fa-arrow-right" id="flecha_derecha"></i></a>
                   <a href="" class="close"><i class="fa-solid fa-xmark"></i></a>
               </article>
               <article class="light-box" id="image5">
-                  <a href="#image4" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+                  <a href="#image4" class="next"><i class="fa-solid fa-arrow-left" id="flecha_izquierda"></i></a>
                   <img src="/assets/Nike Air Max Plus III/5.jpg" alt="">
-                  <a href="#image1" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+                  <a href="#image1" class="next"><i class="fa-solid fa-arrow-right" id="flecha_derecha"></i></a>
                   <a href="" class="close"><i class="fa-solid fa-xmark"></i></a>
               </article>
+             
           </section>
           <section class="recomendation">
         
@@ -211,91 +239,105 @@
                 </div>
               <hr>
               <h4 class="texto">Inspiradas en las AJ1 originales, las Air Jordan 1 Mid ofrecen a los aficionados la oportunidad de seguir los pasos de MJ. El nuevo color ribetea los materiales clásicos e impecables e infunde modernidad a un diseño clásico.</h4>
-              <button class="buttons">Mas</button>
+              <a href="#products"></a> <button class="buttons">Mas</button></a>
             </div>
-          </section>
-  
-        </div>
 
-      </div> 
+          </section>
+          
+          <hr class="line_edit"> 
+        </div>
+        
+
+      </div>  
 
        <!-- fin section principal -->
-       <hr>
+       <hr class="stylo_line"> 
       <!--  Comienzo section popular products  -->
-     <h2 class="text_title">Popular Products</h2>
+      
+      <h2 class="text_title1">Popular Products</h2>
       <div class="popularcontainer">
-     
-      <div class="container-popu">
+  
+       <div class="container-popu">
   <div class="card">
     <div class="imgBx">
       <img src="/assets/objets/zapas objet/hombres/Nike Air VaporMax Plus.png">
     </div>
     <div class="contentBx">
-      <h2>Nike Shoes</h2>
+      <h2>Nike Air VaporMax Plus</h2>
       <div class="prices">
         <h3>Precio :</h3>
-       <h4>179.99</h4>
-             </div>
-   <button id="buttonpopular">Buy Now</button>
+       <h4>214.99 $</h4>
+    </div>
+   <a href="#products"><button id="buttonpopular">Ver Mas</button></a>
     </div>
   </div>
-  <div class="card">
-    <div class="imgBx">
-      <img src="/assets/objets/zapas objet/hombres/Nike-Court-Royale-2-Next-Nature.png">
+  
     </div>
-    <div class="contentBx">
-      <h2>Nike Shoes</h2>
-      <div class="prices">
-        <h3>Precio :</h3>
-       <h4>179.99</h4>
-             </div>
-   <button>Buy Now</button>
-    </div>
+    <div class="container-popu">
+      <div class="card">
+        <div class="imgBx">
+          <img src="/assets/objets/zapas objet/mujeres/Nike-Air-Max-Alpha-Trainer-4.png">
+        </div>
+        <div class="contentBx">
+          <h2>Nike Air Max Alpha Trainer 4</h2>
+          <div class="prices">
+            <h3>Precio :</h3>
+           <h4>79.99 $</h4>
+        </div>
+       <a href="#products"><button id="buttonpopular">Ver Mas</button></a>
+        </div>
+      </div>
+      
+        </div>
+        <div class="container-popu">
+          <div class="card">
+            <div class="imgBx">
+              <img src="/assets/objets/zapas objet/niños/Jordan_Flight_Origin_4.png">
+            </div>
+            <div class="contentBx">
+              <h2>Nike Revolution 6</h2>
+              <div class="prices">
+                <h3>Precio :</h3>
+               <h4>35.97 $</h4>
+            </div>
+           <a href="#products"><button id="buttonpopular">Ver Mas</button></a>
+            </div>
+          </div>
+          
+            </div>
+            <div class="container-popu">
+              <div class="card">
+                <div class="imgBx">
+                  <img src="/assets/objets/zapas objet/Outlet/Nike Air Tuned Max.png">
+                </div>
+                <div class="contentBx">
+                  <h2>Nike Air Tuned Max</h2>
+                  <div class="prices">
+                    <h3>Precio :</h3>
+                   <h4>110.47 $</h4>
+                </div>
+               <a href="#products"><button id="buttonpopular">Ver Mas</button></a>
+                </div>
+              </div>
+              
+                </div>
   </div>
-  <div class="card">
-    <div class="imgBx">
-      <img src="/assets/objets/zapas objet/hombres/Giannis-Immortality-2.png">
-    </div>
-    <div class="contentBx">
-      <h2>Nike Shoes</h2>
-      <div class="prices">
-        <h3>Precio :</h3>
-       <h4>179.99</h4>
-             </div>
-   <button>Buy Now</button>
-    </div>
-  </div>
-  <div class="card">
-    <div class="imgBx">
-      <img src="/assets/objets/zapas objet/hombres/Nike-Air-Force-1-_07.png">
-    </div>
-    <div class="contentBx">
-      <h2>Nike Shoes</h2>
-      <div class="prices">
-        <h3>Precio :</h3>
-       <h4>179.99</h4>
-             </div>
-   <button>Buy Now</button>
-    </div>
-  </div>
- </div>
  
-</div>
-<hr> 
+<hr>   
  
 <!-- fin popular Products --> 
  <section id="products"  class="section-productos">
-  <h2 class="text_title">Shoes Available</h2>  
+  <h2 class="text_title2">Shoes Available</h2>  
   <div class="categories">
     <button class="category active">All</button>
     <button class="category" data-category="men">Men</button>
-    <button class="category" data-category="women">Women</button>
+    <button class="category" data-category="woman">Women</button>
     <button class="category" data-category="kids">Kids</button>
     <button class="category" data-category="outlet">Outlet</button>
     
   </div>
 
-<div class="avaliable_container">
+<div class="avaliable_container"> 
 
 
 
@@ -312,7 +354,7 @@
     <button class="btn-add" data-id='${}' data-name='${}' data-bid='${}' data-img='${}'>Comprar</button>  </div>
   </div> -->
 
-</div>  
+ </div>  
 
 </div> 
 
@@ -320,12 +362,12 @@
  <button class="btn-load">Ver Más</button>
  </section>
  </main> 
- <footer>
+  <footer> 
   
-<div class="container_hr">
+ <div class="container_hr">
   <div class="container_hr_line"
   ><hr class="hr_line"></div>
-<div class="redes_sociales">
+<div class="redes_sociales" id="redes_soc">
    <button><a href="https://www.instagram.com/ariel_garav_/"><i class="fa-brands fa-instagram"></i></a></button>
    <button><a href="https://www.pmarcano.com/"><i class="fa-brands fa-facebook"></i></a></button>
    <button><a href="https://www.pmarcano.com/"><i class="fa-brands fa-whatsapp"></i></a></button>
@@ -333,10 +375,9 @@
    <button><a href="https://www.pmarcano.com/"><i class="fa-brands fa-linkedin-in"></i></a></button>
   </div>
 </div>
-</footer>   
-<div class="add-modal"></div>
+</footer>    
 
-     
+    <script src="assets/objets/objets.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
