@@ -276,7 +276,7 @@ const handleMinusBtnEvent = (id) => {
   const existingCartProduct = cart.find((item) => item.id === id);
 
   if (existingCartProduct.quantity === 1) {
-    if (window.confirm("¿Desea Eliminar el producto del carrito?")) {
+    if (showAlert4()) {
       removeProductFromCart(existingCartProduct);
     }
     return;
@@ -369,6 +369,24 @@ const showAlert3 = () => {
     title: "Producto Agregado Con Exito",
     showConfirmButton: false,
     timer: 1500,
+  });
+};
+const showAlert4 = () => {
+  Swal.fire({
+    title: "Desea Eliminar este producto del carrito?",
+    text: "¿Eliminar?",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonText: "Sí, Borrar",
+    cancelButtonText: "Cancelar",
+  }).then((resultado) => {
+    if (resultado.value) {
+      // Hicieron click en "Sí"
+      resetCartItems();
+    } else {
+      // Dijeron que no
+      return;
+    }
   });
 };
 const init = () => {

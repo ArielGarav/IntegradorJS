@@ -126,8 +126,22 @@
   .presentacion p {
     font-size: 24px;
   }
-  .presentacion h1 {
+  .neon {
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+      0 0 100px #03e9f4;
+    letter-spacing: 5px;
+
+    text-transform: uppercase;
+    transition: 1s;
+    text-align: center;
     font-size: 36px;
+  }
+  .neon:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+      0 0 100px #03e9f4;
   }
   .light-box img {
     width: 50%;
