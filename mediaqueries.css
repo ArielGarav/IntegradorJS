@@ -166,7 +166,7 @@
 
   /* Popular Producs */
   .text_title1 {
-    margin-top: 1115px;
+    margin-top: 965px;
     text-align: center;
   }
 
@@ -222,7 +222,7 @@
 
 @media (max-width: 438px) {
   .presentacion {
-    margin-top: 950px;
+    margin-top: 955px;
   }
 
   .cart-item {
