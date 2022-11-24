@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Poppins", sans-serif;
   width: 100%;
@@ -28,13 +29,16 @@ body {
   padding: 2rem;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
 }
+
 .btn {
   width: 120px;
   margin: 1.5rem 0;
 }
+
 .btn:active {
   transform: scale(0.98);
 }
+
 .fa {
   cursor: pointer;
 }
@@ -42,15 +46,19 @@ body {
 .form-field input {
   color: #ddd;
 }
+
 .alert-message {
   visibility: hidden;
 }
+
 .form-field.error input {
   border-color: red;
 }
+
 .form-field.success input {
   border-color: green;
 }
+
 .home {
   display: flex;
   justify-content: center;
@@ -58,6 +66,7 @@ body {
   font-size: 18px;
   margin: 20px;
 }
+
 .home a i {
   color: white;
 }

@@ -21,10 +21,12 @@ body {
   height: 70px;
   margin: 20px;
 }
+
 .menu__logo {
   width: 150px;
   height: 150px;
 }
+
 .menu__container {
   display: flex;
   justify-content: space-around;
@@ -66,6 +68,7 @@ body {
   --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
   flex-direction: column;
 }
+
 .menu__link::after {
   content: "XSDD";
   display: block;
@@ -101,6 +104,7 @@ body {
   display: block;
   width: 36px;
 }
+
 .jump {
   color: #fff;
   text-decoration: none;
@@ -133,6 +137,7 @@ body {
   flex-direction: column;
   gap: 20px;
 }
+
 /*OCULTAR BARRA DE SCROLL DEL CARRITO*/
 
 .cart::-webkit-scrollbar {
@@ -144,6 +149,7 @@ body {
   height: 5px;
   background-color: white;
 }
+
 .cart h2 {
   font-size: 24px;
   font-weight: 600;
@@ -257,16 +263,20 @@ body {
   gap: 100px;
   height: 80vh;
 }
+
 .datoscontainer {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  gap: 15px;
 }
+
 .datoscontainer h2 {
   font-size: clamp(26px, 2vw, 32px);
 }
+
 .datoscontainer h1 {
-  font-size: clamp(16px, 2vw, 40px);
+  font-size: clamp(30px, 2vw, 40px);
 }
 
 .puntuacion {
@@ -276,9 +286,11 @@ body {
   gap: 10px;
   width: 100%;
 }
+
 .puntuacion p {
   font-size: 26px;
 }
+
 .text_nike_air {
   font-size: clamp(20px, 1vw, 26px);
 }
@@ -286,6 +298,7 @@ body {
 .size p {
   font-size: 22px;
 }
+
 /* puntuacion estrella  */
 .star-widget {
   display: flex;
@@ -294,9 +307,11 @@ body {
   align-items: center;
   width: 100%;
 }
+
 .star-widget input {
   display: none;
 }
+
 .star-widget label {
   font-size: 26px;
   color: #444;
@@ -304,30 +319,37 @@ body {
   float: right;
   transition: all 0.2 ease;
 }
-.star-widget input:not(:checked) ~ label:hover,
-input:not(:checked) ~ label:hover ~ label {
+
+.star-widget input:not(:checked)~label:hover,
+input:not(:checked)~label:hover~label {
   color: #fd4;
 }
-.star-widget input:checked ~ label {
+
+.star-widget input:checked~label {
   color: #fd4;
 }
-.star-widget input#rate-5:checked ~ label {
+
+.star-widget input#rate-5:checked~label {
   color: #fe7;
   text-shadow: 0 0 20px #952;
 }
-.star-widget input:checked ~ form {
+
+.star-widget input:checked~form {
   display: block;
 }
+
 /* fin puntuacion estrella */
 .size {
   display: flex;
   gap: 15px;
 }
+
 .exibicion {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .image-container {
   display: flex;
   flex-direction: column;
@@ -341,12 +363,14 @@ input:not(:checked) ~ label:hover ~ label {
   width: 350px;
   border-radius: 2rem;
 }
+
 .image-product-galery {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
 }
+
 .image-product-galery img {
   width: 100px;
   border-radius: 2rem;
@@ -366,12 +390,15 @@ input:not(:checked) ~ label:hover ~ label {
   align-items: center;
   transform: scale(0);
 }
+
 .light-box img {
   width: 30vw;
 }
+
 .light-box:target {
   transform: scale(1);
 }
+
 .close {
   display: block;
   position: absolute;
@@ -380,31 +407,38 @@ input:not(:checked) ~ label:hover ~ label {
   font-size: 4rem;
   color: #fff;
 }
+
 .close:hover {
   color: #fcde03;
 }
+
 .next {
   display: block;
   font-size: 4rem;
   color: #fff;
 }
+
 .muestra {
   width: 550px;
   height: 500px;
 }
+
 .recomendation {
   display: flex;
   gap: 20px;
 }
+
 .slider {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
+
 .similares {
   width: 140px;
   height: 140px;
 }
+
 .sugerencias {
   display: flex;
   flex-direction: column;
@@ -413,12 +447,15 @@ input:not(:checked) ~ label:hover ~ label {
   padding: 20px;
   width: 350px;
 }
+
 .sugerencias h2 {
   font-size: 32px;
 }
+
 .sugerencias h3 {
   font-size: 24px;
 }
+
 .sugerencias p {
   font-size: 24px;
 }
@@ -430,27 +467,32 @@ input:not(:checked) ~ label:hover ~ label {
   padding: 15px;
   gap: 40px;
 }
+
 .colors {
   width: 20px;
   height: 20px;
   border-radius: 2000px;
 }
+
 .texto {
   font-size: 20px;
   padding-top: 20px;
 }
+
 .marcas_trabajadas {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   gap: 40px;
 }
+
 .marcas_trabajadas img {
   display: flex;
   width: 130px;
   height: 130px;
   padding: 20px;
 }
+
 .container_hr {
   display: flex;
   align-items: center;
@@ -460,14 +502,17 @@ input:not(:checked) ~ label:hover ~ label {
   padding: 20px;
   flex-wrap: wrap;
 }
+
 .container_hr button {
   background-color: #000;
   color: #fff;
   font-size: 24px;
 }
+
 .hr_line {
   width: 80vw;
 }
+
 .line_edit {
   display: none;
 }
@@ -476,6 +521,7 @@ button i {
   width: 40px;
   color: white;
 }
+
 .buttons {
   box-shadow: inset 0px 1px 3px 0px #91b8b3;
   background-color: #191a1a;
@@ -492,17 +538,21 @@ button i {
   text-shadow: 0px 0px 50px #2b665e;
   width: 150px;
 }
+
 .buttons:hover {
   background: linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
   background-color: #6c7c7c;
 }
+
 .buttons:cart-it {
   position: relative;
   top: 1px;
 }
+
 .numbers {
   color: white;
 }
+
 .numbers:hover {
   color: white;
 }
@@ -762,20 +812,24 @@ button i {
   height: 300px;
   width: 300px;
 }
+
 .text_title1 {
   margin: 70px;
   font-size: 40px;
 }
+
 .text_title2 {
   margin: 70px;
   font-size: 40px;
 }
+
 .categories {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 48px;
 }
+
 .category {
   display: inline-block;
   outline: 0;
@@ -794,17 +848,21 @@ button i {
     rgb(246, 84, 174) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
   transition: all 0.2s;
 }
+
 .category:hover {
   box-shadow: rgb(246, 84, 174) -2px -2px 0px 2px,
     rgb(255, 198, 0) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
   transform: scale(1.01);
 }
+
 .cont-menu {
   display: none;
 }
+
 .icono-menu {
   display: none;
 }
+
 .btn-load {
   background: white;
   border: 1px solid var(--electric);
@@ -817,6 +875,7 @@ button i {
   align-items: center;
   text-align: center;
 }
+
 .btn-add,
 .btn-buy,
 .btn-delete {
@@ -833,11 +892,13 @@ button i {
 .btn-add {
   background: gold;
 }
+
 #btn-add {
   background-color: white;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+
 .btn-buy,
 .btn-delete {
   width: 100%;
@@ -862,6 +923,7 @@ button i {
   border-radius: 10px;
   cursor: pointer;
 }
+
 .section-productos {
   display: flex;
   flex-direction: column;
@@ -869,6 +931,7 @@ button i {
   align-items: center;
   text-align: center;
 }
+
 .hidden {
   display: none;
 }
@@ -879,6 +942,7 @@ button i {
   cursor: not-allowed;
   border: none;
 }
+
 .disabled:hover {
   background-color: gray;
   color: white;
@@ -886,59 +950,30 @@ button i {
   border: none;
 }
 
-/* .add-modal {
-  padding: 15px 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-white);
-  background-color: green;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  transition: all 0.5s ease-out;
-  text-align: center;
-  transform: translateY(200%);
-}
-
-.active-modal {
-  transform: translateY(0);
-  transition: all 0.5s ease-in;
-}
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-} */
 .iconomenu-responsive {
   display: none;
 }
+
 .cont-menu {
   display: none;
 }
+
 .cart_container_total {
   display: none;
 }
+
 .open-cart {
   display: block;
 }
+
 #flecha_derecha {
   padding: 15px;
 }
+
 #flecha_izquierda {
   padding: 15px;
 }
+
 .presentacion {
   display: none;
 }

@@ -2,16 +2,20 @@
   .image-product img {
     width: 300px;
   }
+
   .image-product-galery img {
     width: 80px;
   }
+
   .star-widget label {
     font-size: 16px;
     color: #444;
     padding: 5px;
   }
 }
+
 @media (max-width: 1300px) {
+
   .container_izq,
   .container_central,
   .container_derecho {
@@ -23,6 +27,7 @@
     position: relative;
     z-index: 1;
   }
+
   .menu__container {
     display: flex;
     flex-direction: row-reverse;
@@ -56,9 +61,11 @@
   .active {
     display: flex;
   }
+
   .open-cart {
     display: block;
   }
+
   /* Estilos para el listado del Menú */
   .cont-menu ul {
     display: flex;
@@ -96,13 +103,16 @@
     margin: 0px;
     gap: 80px;
   }
+
   .line_edit {
     display: block;
     width: 100vw;
   }
+
   .stylo_line {
     display: none;
   }
+
   .datoscontainer {
     width: 90%;
     display: flex;
@@ -113,9 +123,11 @@
     font-size: 24px;
     padding: 10px;
   }
+
   .recomendation {
     display: none;
   }
+
   .presentacion {
     margin-top: 930px;
     width: 90%;
@@ -123,9 +135,12 @@
     flex-direction: column;
     gap: 40px;
   }
+
   .presentacion p {
     font-size: 24px;
+    font-weight: lighter;
   }
+
   .neon {
     font-weight: 500;
     color: #fff;
@@ -138,22 +153,27 @@
     text-align: center;
     font-size: 36px;
   }
+
   .neon:hover {
     color: #fff;
     text-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
       0 0 100px #03e9f4;
   }
+
   .light-box img {
     width: 50%;
   }
+
   /* Popular Producs */
   .text_title1 {
     margin-top: 1115px;
     text-align: center;
   }
+
   .btn-load {
     margin-bottom: 40px;
   }
+
   /* Shoes avaliable */
   .section-productos {
     display: flex;
@@ -163,10 +183,12 @@
     text-align: center;
     width: 100%;
   }
+
   .categories {
     width: 100%;
     flex-wrap: wrap;
   }
+
   .category {
     display: inline-block;
     outline: 0;
@@ -188,21 +210,26 @@
   .image-product img {
     width: 250px;
   }
+
   .image-product-galery img {
     width: 60px;
   }
+
   .light-box img {
     width: 200px;
   }
 }
+
 @media (max-width: 438px) {
   .presentacion {
     margin-top: 950px;
   }
+
   .cart-item {
     width: 100%;
     gap: 2px;
   }
+
   .cart-container {
     display: flex;
     align-items: center;
@@ -210,29 +237,36 @@
     flex-direction: column;
     width: 100%;
   }
+
   .item-handler {
     display: flex;
     flex-direction: column;
   }
+
   .cart-item img {
     height: 85px;
     width: 75px;
   }
+
   .menu__logo {
     width: 130px;
     height: 130px;
   }
+
   .avaliable_container {
     padding: 15px;
   }
+
   .card-available .contentBox h3 {
     font-size: 17px;
   }
 }
+
 @media (max-width: 345px) {
   #flecha_izquierda {
     font-size: 40px;
   }
+
   #flecha_derecha {
     font-size: 40px;
   }
