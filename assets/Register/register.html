@@ -9,29 +9,29 @@
   <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css" />
   <script src="https://kit.fontawesome.com/5a8f3232d1.js" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="./form.css" />
+  <link rel="stylesheet" href="./register.css" />
   <title>Registro</title>
 </head>
 
 <body>
-  <div class="login-container">
-    <h2>Login</h2>
-    <form action="#" id="loginform">
+  <div class="register-container">
+    <h2>Register</h2>
+    <form action="#" id="registerform">
       <div class="form-field">
-        <label for="loginUsername">Nombre de usuario </label>
-        <input type="text" id="loginUserName" placeholder="Nombre de usuario" />
+        <label for="registerUserName">Ingrese un nombre de usuario </label>
+        <input type="text" id="registerUserName" placeholder="Nombre de usuario" />
         <small class="alert-message">Error</small>
       </div>
       <div class="form-field">
-        <label for="loginPassword">Contraseña</label>
-        <input type="password" id="loginPassword" placeholder="Ingrese su Contraseña" />
+        <label for="registerPassword">Contraseña</label>
+        <input type="password" id="registerPassword" placeholder="Ingrese una Contraseña" />
         <small class="alert-message">Error</small>
       </div>
       <div class="form-field">
         <i class="fa fa-eye" aria-hidden="true"></i>
         <label>Mostrar/ocultar contraseña</label>
       </div>
-      <button class="btn" type="submit">Enviar</button>
+      <button class="btn" type="submit">Crear</button>
     </form>
 
     <div class="reset-password">
@@ -45,8 +45,8 @@
       </div>
       <button class="btn red" type="submit">Solicitud</button>
     </form>
-    <div class="registro">
-      <a id="register" href="/assets/Register/register.html">Aun no tienes cuenta?</a>
+    <div class="login">
+      <a id="loginer" href="/assets/Login/form.html">Tengo cuenta</a>
     </div>
 
     <div class="home">
@@ -54,7 +54,7 @@
     </div>
   </div>
 
-  <script src="./form.js"></script>
+  <script src="./register.js"></script>
 </body>
 
 </html>

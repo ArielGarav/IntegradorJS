@@ -17,7 +17,7 @@ body {
   text-shadow: 2px 1px 1px black;
 }
 
-.login-container {
+.register-container {
   position: relative;
   top: 20%;
   margin: auto;
@@ -67,7 +67,11 @@ body {
   margin: 20px;
 }
 
-#register {
+.login {
+  padding-top: 2px;
+}
+
+#loginer {
   color: white;
   font-size: 12px;
 }

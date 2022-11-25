@@ -13,25 +13,25 @@ const categories = document.querySelector(".categories"); //funca
 const categoriesList = document.querySelectorAll(".category"); //funca
 
 // Botón de ver más
-const btnLoad = document.querySelector(".btn-load"); //funca
+const btnLoad = document.querySelector(".btn-load");
 
 // Botón de comprar
-const buyBtn = document.querySelector(".btn-buy"); //funca
+const buyBtn = document.querySelector(".btn-buy");
 
 // Botón para abrir y cerrar carrito
-const cartBtn = document.querySelector(".icono-carrito"); //funca
-const cartBtnRes = document.querySelector(".icono-carrito-res"); //funca
+const cartBtn = document.querySelector(".icono-carrito");
+const cartBtnRes = document.querySelector(".icono-carrito-res");
 // Carrito
-const cartMenu = document.querySelector(".cart_container_total"); //funca
+const cartMenu = document.querySelector(".cart_container_total");
 
 //  Modal de agregado al carrito.
-const successModal = document.querySelector(".add-modal"); //funca
+const successModal = document.querySelector(".add-modal");
 //  Modal de agregado al carrito.
-const deleteBtn = document.querySelector(".btn-delete"); //funca
+const deleteBtn = document.querySelector(".btn-delete");
 
 //Menu Hamburguesa
-const iconoMenu = document.querySelector("#icono-menu"); // barsBtn
-menu = document.querySelector("#menu"); // bars menu
+const iconoMenu = document.querySelector("#icono-menu");
+menu = document.querySelector("#menu");
 
 // FIN Menu Hamburguesa
 const toggleMenu = () => {
@@ -389,6 +389,7 @@ const showAlert4 = () => {
     }
   });
 };
+
 const init = () => {
   renderProducts();
   categories.addEventListener("click", applyFilter);
